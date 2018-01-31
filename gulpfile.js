@@ -107,3 +107,14 @@ gulp.task('dev', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./js/*.js', ['js']);
   gulp.watch('./*.html', browserSync.reload);
 });
+
+gulp.task('dist',['default'],function(){
+  gulp.src(['css/**/*']).pipe(gulp.dest('dist/css'));
+  gulp.src(['img/**/*']).pipe(gulp.dest('dist/img'));
+  gulp.src(['js/**/*']).pipe(gulp.dest('dist/js'));
+  gulp.src(['vendor/**/*']).pipe(gulp.dest('dist/vendor'));
+  gulp.src(['*.html']).pipe(gulp.dest('dist'));
+  gulp.src(['*.ico']).pipe(gulp.dest('dist'));
+  gulp.src(['*.png']).pipe(gulp.dest('dist'));
+  
+})
