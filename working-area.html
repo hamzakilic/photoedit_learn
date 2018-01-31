@@ -39,9 +39,9 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>           
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -104,10 +104,36 @@
   
                 <div class="clearfix">
                     <a class="btn btn-primary float-right" href="index.html">Home &rarr;</a>
+                    <a class="btn btn-primary float-right mr-1" href="#" onclick="history.back()" > &larr;Back</a>
                   </div>
             </div>
           </div>
+          <div class="row">
+              <div class="col-lg-8 col-md-10 mx-auto">              
+            <div  id="disqus_thread"></div>
+            <script>
+            
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://photoedit.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
+          </div>
         </div>
+        
       </article>
 
     <hr>
